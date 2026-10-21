@@ -76,6 +76,81 @@
   @media(max-width:840px){.wrap{width:min(100% - 46px,760px)}.top .wrap{min-height:68px}.hero .wrap{min-height:auto;padding:40px 0 50px}.hero-main{grid-template-columns:1fr;padding:72px 0 43px}.hero h1{font-size:clamp(56px,11vw,82px);max-width:850px}.visual{display:none}.section{padding:76px 0 90px}.project-grid{grid-template-columns:1fr}.project{min-height:auto}.project .symbol{margin:19px 0 19px}.project .tags{margin-top:26px}.final{flex-direction:column;align-items:stretch}.actions{flex-direction:row}}
   @media(max-width:580px){.wrap{width:calc(100% - 36px)}.top .wrap{min-height:64px}.brandcopy strong{font-size:11px;letter-spacing:.11em}.brandcopy small{font-size:9px}.mark{height:35px;width:35px;font-size:13px}.nav{gap:0}.nav>a:not(.navpdf){display:none}.nav .navpdf{padding:11px 12px;font-size:11px}.hero .wrap{padding:30px 0 38px}.section-top .eyebrow{font-size:10px}.section-top .counter{font-size:11px}.hero-main{padding:79px 0 79px}.hero h1{font-size:clamp(57px,14vw,80px);line-height:.95;margin-bottom:28px}.herosub{font-size:16px;line-height:1.55}.role{margin-top:28px}.role b{font-size:12px}.role span{font-size:12px}.hero-foot p{font-size:10px;max-width:190px}.scroll{font-size:11px}.section{padding:65px 0 76px}.section h2{font-size:clamp(44px,11vw,64px);margin:29px 0 14px}.lede{font-size:15px}.experience{grid-template-columns:1fr;margin-top:32px;gap:10px}.work{min-height:210px;padding:22px}.work h3{font-size:29px;margin:19px 0 8px}.jobdesc{font-size:13px}.prior{grid-template-columns:1fr;gap:7px}.prior p{font-size:13px}.project-grid{margin-top:32px;gap:10px}.project{padding:24px 22px}.project h3{font-size:26px}.project p{font-size:13px}.final{margin-top:32px;padding:30px 22px;gap:25px}.final h3{font-size:32px}.final p{font-size:13px}.actions{flex-direction:column;gap:10px}.btn{width:100%}.foot .wrap{align-items:start;flex-direction:column}.foot span{font-size:12px}}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+  /* Edição compacta: menos rolagem, experiências mais visíveis */
+  .top .wrap{min-height:60px}
+  .hero .wrap{min-height:0;padding:28px 0 25px}
+  .hero-main{grid-template-columns:1.4fr .6fr;padding:26px 0 22px;gap:10px}
+  .hero h1{font-size:clamp(48px,6.3vw,85px);margin:0 0 17px}
+  .herosub{font-size:clamp(14px,1.4vw,17px);max-width:610px;line-height:1.43}
+  .role{margin-top:20px}
+  .visual{width:min(100%,230px)}
+  .visual .float{font-size:8px;padding:7px 9px}
+  .hero-foot{padding-top:14px}
+  .section{padding:46px 0 55px}
+  .section h2{font-size:clamp(34px,4.5vw,60px);margin:22px 0 10px}
+  .lede{font-size:clamp(14px,1.5vw,17px);max-width:710px}
+  .experience{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:23px}
+  .work{padding:20px;min-height:208px}
+  .work h3{font-size:clamp(21px,2.3vw,27px);margin:14px 0 6px}
+  .jobtitle{font-size:12px;line-height:1.36;margin:0 0 8px}
+  .jobdesc{font-size:12px;line-height:1.46}
+  .wmeta{font-size:9px;letter-spacing:.09em}
+  .work.featured{background:#e4efcf;border:2px solid #98bd59;color:#163c29}
+  .work.featured .wmeta{color:#38633f}
+  .work.featured .jobdesc{color:#4a6758}
+  .prior{margin-top:16px;padding-top:13px;grid-template-columns:124px 1fr}
+  .prior p{line-height:1.5;font-size:12px}
+  .project-grid{margin-top:24px;gap:10px}
+  .project{min-height:270px;padding:20px 18px;border-top-width:4px}
+  .project .symbol{width:47px;height:47px;margin:14px 0 12px}
+  .project .symbol svg{width:30px;height:30px}
+  .project h3{font-size:23px;margin-bottom:8px}
+  .project p{font-size:12px;line-height:1.5}
+  .project .tags{font-size:10px;padding-top:11px}
+  .final{margin-top:24px;padding:26px 28px}
+  .final h3{font-size:clamp(24px,3vw,36px)}
+  .final p{font-size:13px}
+  .btn{min-height:44px;padding:10px 16px;font-size:12px}
+  .foot{padding:23px 0}
+  @media(max-width:840px){
+    .hero .wrap{padding:22px 0 23px}
+    .hero-main{padding:35px 0 26px}
+    .hero h1{font-size:clamp(53px,10vw,69px)}
+    .experience{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .work{min-height:195px}
+    .section{padding:39px 0 45px}
+    .project{min-height:0}
+  }
+  @media(max-width:580px){
+    .top .wrap{min-height:56px}
+    .hero .wrap{padding:20px 0 20px}
+    .hero-main{padding:30px 0 25px}
+    .hero h1{font-size:clamp(49px,12vw,64px);margin-bottom:16px}
+    .herosub{font-size:14px}
+    .role{margin-top:16px}
+    .role b,.role span{font-size:11px}
+    .hero-foot{padding-top:14px}
+    .section{padding:33px 0 38px}
+    .section h2{font-size:clamp(34px,9vw,47px);margin:19px 0 9px}
+    .lede{font-size:13px}
+    .experience{grid-template-columns:1fr;gap:7px;margin-top:20px}
+    .work{min-height:0;padding:15px 17px}
+    .work h3{font-size:23px;margin:8px 0 3px}
+    .jobtitle{font-size:12px;margin-bottom:5px}
+    .jobdesc{font-size:11.5px;line-height:1.43}
+    .prior{margin-top:13px;padding-top:12px;gap:4px}
+    .project-grid{margin-top:19px;gap:8px}
+    .project{padding:15px 17px}
+    .project .symbol{display:none}
+    .project h3{font-size:22px;margin-top:9px}
+    .project p{font-size:12px}
+    .project .tags{margin-top:12px}
+    .final{padding:22px 18px;gap:17px}
+    .final h3{font-size:27px}
+    .actions{gap:7px}
+    .btn{min-height:42px}
+  }
   </style>
 </head>
 <body>
@@ -88,7 +163,7 @@
     <div class="section-top"><span class="eyebrow"><span class="accent">●</span> PORTFÓLIO PROFISSIONAL</span><span class="counter">01 / 03</span></div>
     <div class="hero-main"><div>
       <h1>LUCAS<br>CARVALHO<span>.</span></h1>
-      <p class="herosub">Engenharia de Segurança do Trabalho com visão de campo, domínio documental e capacidade de coordenar operações em diferentes regiões do Brasil.</p>
+      <p class="herosub">Segurança do trabalho, engenharia de tráfego e gestão nacional de operações. Técnica aplicada à realidade de campo.</p>
       <div class="role"><b>ENGENHEIRO DE SEGURANÇA DO TRABALHO</b><span>Coordenador Nacional de Prestadores e Operações de SST</span></div>
     </div><div class="visual" aria-hidden="true">
       <div class="radar"></div><div class="cross x"></div><div class="cross y"></div>
@@ -106,15 +181,16 @@
   </div></section>
   <section class="section" id="experiencia" aria-label="Experiência profissional — tela 2"><div class="wrap">
     <div class="section-head"><span class="eyebrow">TRAJETÓRIA PROFISSIONAL</span><span class="counter">02 / 03</span></div>
-    <h2>Experiência<br>que vai além<br>do papel<span style="color:#82a13b">.</span></h2>
-    <p class="lede">Da engenharia de campo à segurança ocupacional, reunindo produção técnica, conformidade e gestão nacional de prestadores.</p>
+    <h2>Experiência de campo.<br>Visão de engenharia<span style="color:#82a13b">.</span></h2>
+    <p class="lede">Segurança do trabalho, engenharia de tráfego, qualidade industrial e obras: uma trajetória que reúne técnica e gestão.</p>
     <div class="experience">
-      <article class="work primary"><div class="wmeta"><span>2026 — ATUAL</span><span>01 / SST</span></div><h3>Life Health Group</h3><p class="jobtitle">Coordenador Nacional de Prestadores e Operações de Segurança do Trabalho</p><p class="jobdesc">Coordenação de profissionais em diferentes estados: captação, alinhamento técnico, orçamentos, visitas, avaliações, treinamentos e acompanhamento das entregas.</p></article>
-      <article class="work primary"><div class="wmeta"><span>MAR — SET / 2026</span><span>02 / ENGENHARIA</span></div><h3>Especializar</h3><p class="jobtitle">Engenheiro de Segurança do Trabalho</p><p class="jobdesc">Elaboração e revisão de PGR/GRO, inventários de riscos, planos de ação, documentos ocupacionais e cadastros no sistema SOC.</p></article>
-      <article class="work"><div class="wmeta"><span>2024 — 2025</span><span>03 / QUALIDADE</span></div><h3>JBS</h3><p class="jobtitle">Analista de Qualidade e Conformidade Regulatória</p><p class="jobdesc">Auditorias, controle de documentos, rastreabilidade e conformidade em processos industriais regulados.</p></article>
-      <article class="work"><div class="wmeta"><span>2023 — 2024</span><span>04 / CAMPO</span></div><h3>Andrade Gutierrez</h3><p class="jobtitle">Apoio Técnico de Engenharia e Obras</p><p class="jobdesc">Acompanhamento de obras de infraestrutura e saneamento, relatórios técnicos, registros de campo e controle de serviços.</p></article>
+      <article class="work primary"><div class="wmeta"><span>2026 — ATUAL</span><span>GESTÃO NACIONAL</span></div><h3>Life Health Group</h3><p class="jobtitle">Coordenador Nacional de Prestadores e Operações de Segurança do Trabalho</p><p class="jobdesc">Coordenação de profissionais de SST em diferentes estados, com gestão de demandas, escopos, cotações e entregas.</p></article>
+      <article class="work primary"><div class="wmeta"><span>2026</span><span>ENGENHARIA DE SEGURANÇA</span></div><h3>Especializar</h3><p class="jobtitle">Engenheiro de Segurança do Trabalho</p><p class="jobdesc">PGR/GRO, inventários de riscos, documentação ocupacional e gestão de informações no SOC.</p></article>
+      <article class="work featured"><div class="wmeta"><span>DESDE 2025</span><span>ENGENHARIA DE TRÁFEGO</span></div><h3>Strata Engenharia</h3><p class="jobtitle">Engenheiro de Tráfego</p><p class="jobdesc">Estudos de mobilidade e circulação, análises de tráfego, levantamentos em campo e relatórios técnicos.</p></article>
+      <article class="work"><div class="wmeta"><span>2024 — 2025</span><span>QUALIDADE INDUSTRIAL</span></div><h3>JBS</h3><p class="jobtitle">Analista de Qualidade e Conformidade Regulatória</p><p class="jobdesc">Rastreabilidade, auditorias e controle documental em processos industriais.</p></article>
+      <article class="work"><div class="wmeta"><span>2023 — 2024</span><span>OBRAS E INFRAESTRUTURA</span></div><h3>Andrade Gutierrez</h3><p class="jobtitle">Apoio Técnico de Engenharia e Obras</p><p class="jobdesc">Acompanhamento de obras, controle de serviços e registros técnicos de campo.</p></article>
     </div>
-    <div class="prior"><b>Outras experiências</b><p><strong>Strata Engenharia</strong> — estudos de tráfego e mobilidade · <strong>SAAE Itabirito</strong> — fiscalização e qualidade em obras · <strong>ITA Alimentos</strong> — logística e indicadores.</p></div>
+    <div class="prior"><b>Também atuei em</b><p><strong>SAAE Itabirito</strong> — fiscalização e qualidade em obras · <strong>ITA Alimentos</strong> — logística e indicadores.</p></div>
   </div></section>
   <section class="section projects" id="atuacao" aria-label="Especialidades e contato — tela 3"><div class="wrap">
     <div class="section-head"><span class="eyebrow">APLICAÇÃO PRÁTICA</span><span class="counter">03 / 03</span></div>
