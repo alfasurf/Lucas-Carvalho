@@ -1,2 +1,5 @@
 # Lucas Carvalho — Portfólio
-Portfólio profissional de Lucas Carvalho, Engenheiro de Segurança do Trabalho.
+
+[Visualizar portfólio em PDF](portfolio.pdf)
+
+Engenheiro de Segurança do Trabalho • Belo Horizonte, MG.
