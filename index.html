@@ -1,155 +1,226 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101d30">
-<meta name="description" content="Lucas Carvalho: Engenheiro de Segurança do Trabalho, com experiência em PGR/GRO, gestão documental e coordenação nacional de operações de SST.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lucas Carvalho | Engenheiro de Segurança do Trabalho">
-<meta property="og:description" content="Engenharia de Segurança do Trabalho e coordenação nacional de SST. Experiência, áreas de atuação e portfólio completo.">
-<title>Lucas Carvalho | Engenharia de Segurança do Trabalho</title>
-<style>
-:root{color-scheme:light;--navy:#101d30;--navy2:#182c45;--orange:#ed754b;--ink:#172238;--muted:#677386;--line:#e0e5eb;--pale:#f4f6f9;--white:#fff}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#f6f7f9;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
-.container{width:min(1100px,calc(100% - 44px));margin-inline:auto}
-.top{background:var(--navy);color:white;border-bottom:1px solid #ffffff21}
-.top .container{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;gap:11px;align-items:center;min-width:0}
-.mark{width:34px;height:34px;flex:none;border:1px solid var(--orange);display:grid;place-items:center;color:var(--orange);font-size:13px;letter-spacing:-.06em;font-weight:900}
-.brandtext{display:flex;flex-direction:column;gap:3px}
-.brandtext strong{font-size:13px;letter-spacing:.095em}
-.brandtext small{font-size:10px;color:#a9b8c9;letter-spacing:.06em}
-.top-actions{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:750}
-.top-actions .download{border:1px solid #8190a4;color:white;padding:10px 14px}
-.top-actions .download:hover{background:#ffffff1a}
-.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0 61%,#ffffff04 61% 62%,transparent 62% 72%,#ffffff04 72% 73%,transparent 73%);pointer-events:none}
-.hero .container{position:relative;padding:42px 0 46px}
-.overline{display:flex;align-items:center;gap:10px;letter-spacing:.16em;color:#c1cfdb;font-size:10px;font-weight:800;text-transform:uppercase}
-.overline i{display:block;width:24px;height:3px;background:var(--orange)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(205px,.75fr);gap:24px;align-items:end;margin-top:20px}
-.hero h1{font-size:clamp(43px,6.6vw,82px);letter-spacing:-.08em;line-height:.98;margin:0;font-weight:850}
-.hero h1 span{display:block;color:var(--orange)}
-.hero .name{margin:21px 0 0;font-size:18px;font-weight:850;letter-spacing:.16em}
-.hero-aside{padding:0 0 4px 21px;border-left:3px solid var(--orange)}
-.hero-aside strong{font-size:13px;letter-spacing:.085em;text-transform:uppercase}
-.hero-aside p{font-size:15px;line-height:1.53;color:#d5dde8;margin:12px 0 0}
-.hero-bottom{margin-top:32px;padding-top:16px;border-top:1px solid #ffffff29;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:11px;letter-spacing:.055em;color:#b8c5d4}
-.hero-bottom a{font-weight:850;color:var(--orange);text-transform:uppercase}
-.main{padding:28px 0 0}
-.section-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:17px}
-.section-heading h2{font-size:clamp(22px,2.7vw,30px);margin:0;letter-spacing:-.055em}
-.section-heading span{font-size:11px;font-weight:750;color:#778294;text-transform:uppercase;letter-spacing:.07em}
-.primary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.position{background:#fff;border:1px solid var(--line);border-top:4px solid var(--orange);padding:22px 24px 23px;min-width:0}
-.position .meta{font-size:10px;font-weight:900;letter-spacing:.12em;color:#bd5634;text-transform:uppercase}
-.position h3{margin:11px 0 5px;font-size:clamp(23px,2.55vw,32px);letter-spacing:-.055em;line-height:1.15}
-.position .role{margin:0 0 10px;font-size:13px;font-weight:800;line-height:1.47}
-.position .detail{margin:0;font-size:13px;line-height:1.6;color:#59677a}
-.position.life{background:var(--navy2);border-color:var(--navy2);border-top-color:var(--orange);color:white}
-.position.life .role{color:#f3f6fb}
-.position.life .meta{color:#ffad88}
-.position.life .detail{color:#d2dbe7}
-.secondary{margin-top:16px;background:#edf1f6;border:1px solid #dae1e9;padding:16px 20px;display:flex;gap:18px;align-items:center}
-.secondary .tag{border-left:3px solid var(--orange);padding-left:12px;min-width:200px}
-.secondary .tag span{display:block;font-size:9px;letter-spacing:.11em;font-weight:850;color:#ad5032;text-transform:uppercase}
-.secondary .tag strong{display:block;font-size:19px;letter-spacing:-.04em;margin-top:4px}
-.secondary p{margin:0;font-size:12px;color:#506077;line-height:1.6}
-.secondary b{color:#1c2b41}
-.earlier{font-size:12px;color:#667387;padding:13px 0;border-bottom:1px solid var(--line);line-height:1.7}
-.earlier strong{color:#283449}
-.bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0 29px}
-.bottom-info{flex:1}
-.bottom-info b{display:block;font-size:12px;margin-bottom:6px}
-.bottom-info p{font-size:12px;color:#667386;margin:0;line-height:1.62}
-.actions{display:flex;gap:8px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:45px;font-size:12px;font-weight:850;padding:11px 16px;white-space:nowrap}
-.btn-main{background:var(--orange);color:#111c2d}
-.btn-other{background:#fff;border:1px solid #cbd4de;color:#26344d}
-footer{background:#e9edf2;border-top:1px solid var(--line);padding:19px 0;font-size:11px;color:#637185}
-footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{font-weight:800;color:#263d63}
-@media(max-width:760px){
- .hero-grid{grid-template-columns:1fr;gap:19px}
- .hero-aside{max-width:600px}
- .primary-grid{grid-template-columns:1fr}
- .position{padding:19px 20px}
- .bottom{flex-direction:column;align-items:stretch}
- .actions{width:100%}.actions a{flex:1}
-}
-@media(max-width:560px){
- .container{width:calc(100% - 34px)}
- .top .container{min-height:56px}
- .mark{width:31px;height:31px}
- .brandtext strong{font-size:11px}.brandtext small{font-size:9px}
- .top-actions>a:not(.download){display:none}
- .top-actions .download{padding:9px 11px;font-size:10px}
- .hero .container{padding:30px 0 28px}
- .overline{font-size:9px}
- .hero-grid{margin-top:14px;gap:17px}
- .hero h1{font-size:clamp(43px,10.7vw,62px)}
- .hero .name{font-size:13px;margin-top:16px}
- .hero-aside{padding-left:13px}
- .hero-aside strong{font-size:11px}
- .hero-aside p{font-size:12px;line-height:1.52;margin-top:7px}
- .hero-bottom{margin-top:21px;padding-top:13px;font-size:9px}
- .hero-bottom span{max-width:180px}
- .main{padding-top:21px}
- .section-heading{margin-bottom:11px}
- .section-heading h2{font-size:22px}
- .section-heading span{font-size:9px}
- .primary-grid{gap:9px}
- .position{padding:15px 17px}
- .position h3{font-size:25px;margin:7px 0 4px}
- .position .role{font-size:11.5px;margin-bottom:6px}
- .position .detail{font-size:11.5px;line-height:1.52}
- .secondary{padding:12px 15px;display:block;margin-top:10px}
- .secondary .tag{margin-bottom:8px}
- .secondary .tag strong{font-size:19px}
- .secondary p{font-size:11px}
- .earlier{padding:10px 0;font-size:11px}
- .bottom{padding:16px 0 22px;gap:16px}
- .bottom-info p{font-size:11px}
- .actions{gap:7px}
- .btn{padding:10px 8px;font-size:11px;white-space:normal;text-align:center}
- footer{padding:14px 0;font-size:10px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#122b27">
+  <meta name="description" content="Lucas Carvalho — Engenheiro de Segurança do Trabalho. Coordenador Nacional de Prestadores e Operações de SST. Conheça minha trajetória, projetos e portfólio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Carvalho | Engenharia de Segurança do Trabalho">
+  <meta property="og:description" content="Engenharia, prevenção e coordenação nacional de SST. Experiência, projetos e portfólio profissional.">
+  <title>Lucas Carvalho — Portfólio de Engenharia de Segurança do Trabalho</title>
+  <style>
+  :root{--dark:#122b27;--dark2:#0c201d;--lime:#d9f46c;--cream:#f6f5ef;--ink:#18342e;--ink2:#557068;--white:#ffffff;--edge:#dce4d9}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Avenir Next",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  button,a{-webkit-tap-highlight-color:transparent}
+  .wrap{width:min(1160px,calc(100% - 88px));margin:0 auto}
+  .top{position:sticky;top:0;z-index:50;background:rgba(18,43,39,.96);border-bottom:1px solid #ffffff22;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:white}
+  .top .wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .brand{display:flex;gap:12px;align-items:center;text-decoration:none;white-space:nowrap}
+  .mark{width:42px;height:42px;border:1.5px solid var(--lime);display:grid;place-items:center;font-weight:900;font-size:15px;letter-spacing:-.1em;color:var(--lime)}
+  .brandcopy{display:flex;flex-direction:column;gap:3px}.brandcopy strong{font-size:13px;letter-spacing:.17em}.brandcopy small{font-size:10px;letter-spacing:.15em;color:#aec1b7}
+  .nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700}.nav a{text-decoration:none}.nav a:hover{color:var(--lime)}
+  .nav .navpdf{padding:12px 18px;color:var(--dark);background:var(--lime)}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+  .counter{font-size:12px;letter-spacing:.17em;font-weight:800;font-variant-numeric:tabular-nums}
+  .accent{color:var(--lime)}
+  .hero{background:var(--dark);color:white;overflow:hidden}
+  .hero .wrap{min-height:calc(100svh - 78px);padding:62px 0 54px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+  .section-top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#c7d7cb}
+  .hero-main{display:grid;grid-template-columns:1.17fr .83fr;align-items:center;gap:20px;padding:48px 0 36px}
+  .hero h1{font-size:clamp(52px,7.8vw,118px);letter-spacing:-.085em;line-height:.91;margin:0 0 33px;font-weight:850;max-width:950px}
+  .hero h1 span{color:var(--lime)}
+  .herosub{font-size:clamp(15px,1.6vw,19px);line-height:1.6;color:#d9e2dc;max-width:570px;margin:0}
+  .role{margin-top:32px;display:flex;flex-direction:column;gap:8px;border-left:3px solid var(--lime);padding-left:18px}
+  .role b{font-size:13px;letter-spacing:.08em}.role span{font-size:13px;color:#c2d3c9}
+  .visual{justify-self:center;align-self:center;width:min(100%,440px);aspect-ratio:1;position:relative}
+  .visual .radar{position:absolute;inset:7%;border:1px solid #84aa902f;border-radius:50%;box-shadow:0 0 0 42px #53796210,0 0 0 84px #5379620a}
+  .visual .radar::before,.visual .radar::after{content:"";position:absolute;border:1px solid #99c2ab26;border-radius:50%;inset:20%}.visual .radar::after{inset:37%}
+  .visual .cross{position:absolute;background:#83a68d3d}.visual .cross.x{height:1px;left:0;right:0;top:50%}.visual .cross.y{width:1px;top:0;bottom:0;left:50%}
+  .visual svg{width:100%;height:100%;position:relative;z-index:2;filter:drop-shadow(0 14px 18px #07141155)}
+  .visual .float{position:absolute;z-index:3;background:var(--lime);color:var(--dark);font-size:10px;padding:12px 16px;font-weight:900;letter-spacing:.14em;box-shadow:10px 11px 0 #071c1899}.visual .f1{left:-3%;top:18%}.visual .f2{right:-1%;bottom:16%}
+  .hero-foot{display:flex;justify-content:space-between;align-items:end;gap:16px;padding-top:24px;border-top:1px solid #ffffff37}
+  .hero-foot p{margin:0;font-size:12px;color:#b6cbbf;letter-spacing:.09em}
+  .scroll{font-size:12px;text-decoration:none;font-weight:800;letter-spacing:.12em;color:var(--lime)}
+  .section{padding:94px 0 110px}
+  .section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #bcccbf;padding-bottom:19px}
+  .section-head .eyebrow{color:#647c70}.section-head .counter{color:#647c70}
+  .section h2{font-size:clamp(43px,6.4vw,88px);line-height:.97;letter-spacing:-.075em;max-width:1030px;margin:39px 0 17px;font-weight:850}
+  .lede{color:#567368;max-width:730px;font-size:clamp(16px,1.8vw,20px);line-height:1.5;margin:0}
+  .experience{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:42px}
+  .work{padding:30px;border:1px solid var(--edge);background:#fff;display:flex;flex-direction:column;min-height:285px}
+  .work.primary{background:var(--dark);color:white;border-color:var(--dark)}
+  .work.primary .muted{color:#abc4b7}.work.primary .jobdesc{color:#d7e0d6}
+  .wmeta{display:flex;justify-content:space-between;gap:8px;align-items:start;color:#7d9489;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800}
+  .work.primary .wmeta{color:var(--lime)}
+  .work h3{font-size:clamp(23px,2.6vw,34px);letter-spacing:-.052em;line-height:1.1;margin:26px 0 8px}
+  .jobtitle{font-size:13px;font-weight:800;line-height:1.5;margin:0 0 16px}.jobdesc{font-size:14px;line-height:1.57;color:#657b70;margin:auto 0 0}
+  .prior{border-top:1px solid #b4c7b8;margin-top:28px;padding-top:26px;display:grid;grid-template-columns:155px 1fr;gap:16px}
+  .prior b{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#567368}
+  .prior p{font-size:14px;line-height:1.9;margin:0}.prior p strong{color:#17382e}
+  .projects{background:#e4eae0}
+  .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:46px}
+  .project{background:white;display:flex;flex-direction:column;min-height:425px;padding:30px 26px;border-top:6px solid var(--dark)}
+  .project .num{font-size:12px;letter-spacing:.14em;color:#607b6d;font-weight:800}.project .symbol{width:64px;height:64px;border:1px solid #d5dfd3;margin:30px 0 16px;display:grid;place-items:center}
+  .project h3{font-size:clamp(22px,2.5vw,29px);line-height:1.1;letter-spacing:-.045em;margin:0 0 13px}
+  .project p{color:#5b756a;font-size:14px;line-height:1.63;margin:0}.project .tags{font-size:11px;font-weight:800;letter-spacing:.08em;border-top:1px solid #e5ebe2;margin-top:auto;padding-top:20px;color:#315b46}
+  .final{margin-top:48px;background:var(--dark);color:white;padding:44px 46px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+  .final h3{font-size:clamp(27px,3.5vw,46px);letter-spacing:-.055em;margin:0 0 14px;line-height:1.02}.final p{margin:0;color:#bed2c7;font-size:15px;line-height:1.6}
+  .actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+  .btn{display:inline-flex;justify-content:center;align-items:center;gap:11px;min-height:52px;padding:14px 24px;text-decoration:none;font-size:13px;font-weight:900;white-space:nowrap}
+  .btn-main{background:var(--lime);color:var(--dark)}.btn-outline{border:1px solid #7d9989;color:white}
+  .foot{background:#0d221e;color:white;padding:38px 0}.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:22px}.foot span{font-size:13px;color:#b6cabe}.foot a{font-weight:800;text-decoration:none;letter-spacing:.03em}
+  @media(max-width:840px){.wrap{width:min(100% - 46px,760px)}.top .wrap{min-height:68px}.hero .wrap{min-height:auto;padding:40px 0 50px}.hero-main{grid-template-columns:1fr;padding:72px 0 43px}.hero h1{font-size:clamp(56px,11vw,82px);max-width:850px}.visual{display:none}.section{padding:76px 0 90px}.project-grid{grid-template-columns:1fr}.project{min-height:auto}.project .symbol{margin:19px 0 19px}.project .tags{margin-top:26px}.final{flex-direction:column;align-items:stretch}.actions{flex-direction:row}}
+  @media(max-width:580px){.wrap{width:calc(100% - 36px)}.top .wrap{min-height:64px}.brandcopy strong{font-size:11px;letter-spacing:.11em}.brandcopy small{font-size:9px}.mark{height:35px;width:35px;font-size:13px}.nav{gap:0}.nav>a:not(.navpdf){display:none}.nav .navpdf{padding:11px 12px;font-size:11px}.hero .wrap{padding:30px 0 38px}.section-top .eyebrow{font-size:10px}.section-top .counter{font-size:11px}.hero-main{padding:79px 0 79px}.hero h1{font-size:clamp(57px,14vw,80px);line-height:.95;margin-bottom:28px}.herosub{font-size:16px;line-height:1.55}.role{margin-top:28px}.role b{font-size:12px}.role span{font-size:12px}.hero-foot p{font-size:10px;max-width:190px}.scroll{font-size:11px}.section{padding:65px 0 76px}.section h2{font-size:clamp(44px,11vw,64px);margin:29px 0 14px}.lede{font-size:15px}.experience{grid-template-columns:1fr;margin-top:32px;gap:10px}.work{min-height:210px;padding:22px}.work h3{font-size:29px;margin:19px 0 8px}.jobdesc{font-size:13px}.prior{grid-template-columns:1fr;gap:7px}.prior p{font-size:13px}.project-grid{margin-top:32px;gap:10px}.project{padding:24px 22px}.project h3{font-size:26px}.project p{font-size:13px}.final{margin-top:32px;padding:30px 22px;gap:25px}.final h3{font-size:32px}.final p{font-size:13px}.actions{flex-direction:column;gap:10px}.btn{width:100%}.foot .wrap{align-items:start;flex-direction:column}.foot span{font-size:12px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+  /* Refinamento da versão verde original, preservando o nome como destaque */
+  .top .wrap{min-height:64px}
+  .hero .wrap{min-height:0;padding:34px 0 29px}
+  .hero-main{grid-template-columns:1.22fr .78fr;padding:28px 0 22px}
+  .hero h1{font-size:clamp(59px,7.3vw,96px);margin-bottom:15px;line-height:.9}
+  .headline-role{font-size:clamp(13px,1.5vw,18px);font-weight:850;letter-spacing:.08em;color:var(--lime);margin:0 0 13px;line-height:1.38}
+  .herosub{font-size:clamp(14px,1.4vw,17px);line-height:1.47}
+  .role{margin-top:18px;padding-left:14px}
+  .role b,.role span{font-size:12px}
+  .visual{width:min(100%,290px)}
+  .visual .float{font-size:8px;padding:8px 10px}
+  .hero-foot{padding-top:15px}
+  .section{padding:49px 0 58px}
+  .section h2{font-size:clamp(40px,5vw,64px);margin:24px 0 13px}
+  .lede{font-size:clamp(14px,1.55vw,17px)}
+  .experience{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+  .work{padding:25px 24px;min-height:230px}
+  .work h3{font-size:clamp(24px,3vw,31px);margin:16px 0 8px}
+  .jobtitle{font-size:12px;margin-bottom:12px}
+  .jobdesc{font-size:13px;line-height:1.5}
+  .strata{margin-top:12px;background:#f5f8ee;border:1px solid #cfddc4;border-left:4px solid #9ebd65;padding:20px 24px}
+  .strata-head{display:flex;justify-content:space-between;gap:12px;color:#60815b;font-size:10px;font-weight:850;letter-spacing:.12em}
+  .strata-body{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;align-items:center;margin-top:10px}
+  .strata h3{margin:0 0 4px;font-size:clamp(23px,2.5vw,29px);letter-spacing:-.055em}
+  .strata strong{display:block;font-size:13px;color:#31553a}
+  .strata p{margin:0;color:#54705c;font-size:13px;line-height:1.55}
+  .prior{margin-top:13px;padding-top:15px;grid-template-columns:150px 1fr}
+  .prior p{font-size:12px;line-height:1.65}
+  .project-grid{margin-top:25px;gap:11px}
+  .project{min-height:0;padding:22px 20px;border-top-width:4px}
+  .project .symbol{width:47px;height:47px;margin:14px 0 12px}
+  .project .symbol svg{width:31px;height:31px}
+  .project h3{font-size:clamp(21px,2.4vw,25px);margin-bottom:9px}
+  .project p{font-size:12px;line-height:1.52}
+  .project .tags{font-size:10px;padding-top:13px;margin-top:20px}
+  .final{margin-top:24px;padding:28px 30px}
+  .final h3{font-size:clamp(26px,3vw,38px)}
+  .final p{font-size:13px}
+  .btn{min-height:45px;padding:12px 17px;font-size:12px}
+  .foot{padding:25px 0}
+  @media(max-width:840px){
+    .hero .wrap{padding:29px 0 27px}
+    .hero-main{grid-template-columns:1fr;padding:27px 0 26px}
+    .hero h1{font-size:clamp(59px,10.9vw,79px)}
+    .section{padding:43px 0 52px}
+    .experience{grid-template-columns:1fr}
+    .work{min-height:0}
+    .strata-body{grid-template-columns:1fr;gap:8px}
+    .project-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:580px){
+    .top .wrap{min-height:59px}
+    .hero .wrap{padding:20px 0 19px}
+    .hero-main{padding:26px 0 25px}
+    .hero h1{font-size:clamp(59px,14vw,74px);margin:0 0 13px}
+    .headline-role{font-size:13px;margin-bottom:10px}
+    .herosub{font-size:13px;line-height:1.45}
+    .role{margin-top:13px;padding-left:11px}
+    .role b,.role span{font-size:11px}
+    .hero-foot{padding-top:12px}
+    .section{padding:32px 0 38px}
+    .section h2{font-size:clamp(36px,9.3vw,47px);margin:21px 0 9px}
+    .lede{font-size:13px;line-height:1.48}
+    .experience{margin-top:19px;gap:9px}
+    .work{padding:16px 18px}
+    .work h3{font-size:25px;margin:9px 0 5px}
+    .jobtitle{font-size:11.5px;margin-bottom:7px}
+    .jobdesc{font-size:11.5px;line-height:1.49}
+    .strata{padding:13px 17px;margin-top:9px}
+    .strata-head{font-size:9px;letter-spacing:.05em}
+    .strata-body{margin-top:8px;gap:5px}
+    .strata h3{font-size:23px}
+    .strata strong{font-size:11.5px}
+    .strata p{font-size:11.5px;line-height:1.5}
+    .prior{grid-template-columns:1fr;gap:6px;margin-top:12px;padding-top:12px}
+    .prior p{font-size:11px;line-height:1.5}
+    .project-grid{margin-top:20px;gap:8px}
+    .project{padding:16px 18px;min-height:0}
+    .project .symbol{display:none}
+    .project h3{font-size:22px;margin:8px 0 7px}
+    .project p{font-size:11.5px}
+    .project .tags{margin-top:12px;padding-top:10px}
+    .final{padding:24px 20px;gap:17px;margin-top:22px}
+    .final h3{font-size:29px}
+    .actions{gap:8px}
+    .btn{min-height:43px;padding:10px 13px}
+    .foot{padding:18px 0}
+  }
+
 </style>
 </head>
 <body>
-<header class="top"><div class="container">
- <a class="brand" href="#inicio"><span class="mark">LC</span><span class="brandtext"><strong>LUCAS CARVALHO</strong><small>ENGENHARIA DE SEGURANÇA</small></span></a>
- <nav class="top-actions" aria-label="Navegação"><a href="#experiencia">Experiência</a><a class="download" href="portfolio.pdf" download="Portfolio_Lucas_Carvalho_2026.pdf">↓ BAIXAR PDF</a></nav>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="mark">LC</span><span class="brandcopy"><strong>LUCAS CARVALHO</strong><small>ENGENHARIA DE SEGURANÇA</small></span></a>
+  <nav class="nav" aria-label="Navegação principal"><a href="#experiencia">Experiência</a><a href="#atuacao">Atuação</a><a class="navpdf" href="portfolio.pdf" download="Portfolio_Lucas_Carvalho_2026.pdf">↓ BAIXAR PDF</a></nav>
 </div></header>
-<main id="inicio">
- <section class="hero" aria-label="Apresentação profissional"><div class="container">
-  <div class="overline"><i aria-hidden="true"></i> Portfólio profissional / 2026</div>
-  <div class="hero-grid">
-   <div><h1>ENGENHARIA DE <span>SEGURANÇA.</span></h1><p class="name">LUCAS CARVALHO</p></div>
-   <div class="hero-aside"><strong>Engenheiro de Segurança do Trabalho</strong><p>Produção técnica de SST, gestão de riscos e coordenação nacional de prestadores e operações de segurança do trabalho.</p></div>
-  </div>
-  <div class="hero-bottom"><span>BELO HORIZONTE / MG · ATENDIMENTO NACIONAL</span><a href="#experiencia">EXPERIÊNCIA ↓</a></div>
- </div></section>
- <section class="main container" id="experiencia" aria-label="Experiências e atuação">
-  <div class="section-heading"><h2>Onde minha experiência faz a diferença.</h2><span>Atuação em destaque</span></div>
-  <div class="primary-grid">
-   <article class="position"><div class="meta">Engenharia técnica · 2026</div><h3>Especializar</h3><p class="role">Engenheiro de Segurança do Trabalho</p><p class="detail">Elaboração e revisão de PGR/GRO, inventários de riscos, planos de ação, documentação ocupacional e cadastros no SOC.</p></article>
-   <article class="position life"><div class="meta">Coordenação nacional · 2026 — atual</div><h3>Life Health Group</h3><p class="role">Coordenador Nacional de Prestadores e Operações de Segurança do Trabalho</p><p class="detail">Captação e coordenação de profissionais locais, alinhamento de escopos, cotações, visitas, avaliações e treinamentos em diversas regiões do Brasil.</p></article>
-  </div>
-  <div class="secondary"><div class="tag"><span>Experiência anterior · Engenharia de tráfego</span><strong>Strata Engenharia</strong></div><p><b>Engenheiro de Tráfego.</b> Estudos de mobilidade e circulação, levantamentos em campo, análises de tráfego e relatórios técnicos.</p></div>
-  <div class="earlier"><strong>Outras experiências:</strong> JBS · Qualidade e conformidade &nbsp;·&nbsp; Andrade Gutierrez · Obras e infraestrutura &nbsp;·&nbsp; SAAE Itabirito · Fiscalização técnica.</div>
-  <div class="bottom">
-   <div class="bottom-info"><b>Engenharia aplicada, prevenção e capacidade de execução.</b><p>Engenharia Urbana — UFOP · Especialização em Engenharia de Segurança do Trabalho · CREA-MG e CREA-SP.</p></div>
-   <div class="actions"><a class="btn btn-main" href="completo.html">VER PORTFÓLIO COMPLETO ↗</a><a class="btn btn-other" href="portfolio.pdf" download="Portfolio_Lucas_Carvalho_2026.pdf">↓ BAIXAR PDF</a></div>
-  </div>
- </section>
+<main>
+  <section class="hero" id="inicio" aria-label="Apresentação profissional — tela 1"><div class="wrap">
+    <div class="section-top"><span class="eyebrow"><span class="accent">●</span> PORTFÓLIO PROFISSIONAL</span><span class="counter">01 / 03</span></div>
+    <div class="hero-main"><div>
+      <h1>LUCAS<br>CARVALHO<span>.</span></h1>
+      <div class="headline-role">ENGENHEIRO DE SEGURANÇA DO TRABALHO</div>
+      <p class="herosub">Engenharia de Segurança do Trabalho, gestão de riscos e coordenação nacional de operações de SST.</p>
+      <div class="role"><b>COORDENAÇÃO NACIONAL DE SST</b><span>Experiência técnica, organização de prestadores e execução em diferentes regiões do Brasil.</span></div>
+    </div><div class="visual" aria-hidden="true">
+      <div class="radar"></div><div class="cross x"></div><div class="cross y"></div>
+      <svg viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M77 299 L173 129 L266 179 L357 81" stroke="#D9F46C" stroke-width="3" />
+        <path d="M88 316 L218 348 L355 213 L264 175 L174 127 L77 299" stroke="#BDE1BA" stroke-opacity=".6" stroke-width="1.5"/>
+        <path d="M174 127 L218 348 M264 175 L218 348 M264 175 L357 81 M355 213 L357 81 M77 299 L355 213" stroke="#A3C9AF" stroke-opacity=".23"/>
+        <circle cx="77" cy="299" r="9" fill="#D9F46C"/><circle cx="174" cy="127" r="9" fill="#D9F46C"/><circle cx="264" cy="175" r="9" fill="#D9F46C"/><circle cx="357" cy="81" r="9" fill="#D9F46C"/><circle cx="218" cy="348" r="7" fill="#CDE0D2"/><circle cx="355" cy="213" r="7" fill="#CDE0D2"/>
+        <path d="M235 246 L286 275 L250 333 L199 303 Z" fill="#1E483A" stroke="#5B9473" stroke-width="1.5" />
+        <path d="M231 255 L245 276 L272 248" stroke="#D9F46C" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <span class="float f1">RISCO / CONTROLE</span><span class="float f2">ENGENHARIA / AÇÃO</span>
+    </div></div>
+    <div class="hero-foot"><p>BELO HORIZONTE · MINAS GERAIS<br>ATENDIMENTO NACIONAL</p><a class="scroll" href="#experiencia">CONHEÇA A TRAJETÓRIA ↓</a></div>
+  </div></section>
+  <section class="section" id="experiencia" aria-label="Experiência profissional — tela 2"><div class="wrap">
+    <div class="section-head"><span class="eyebrow">TRAJETÓRIA PROFISSIONAL</span><span class="counter">02 / 03</span></div>
+    <h2>Experiência que<br>faz a diferença<span style="color:#82a13b">.</span></h2>
+    <p class="lede">Minha atuação principal é em segurança do trabalho e coordenação de operações. A experiência em tráfego, qualidade e obras complementa essa base.</p>
+    <div class="experience">
+      <article class="work primary"><div class="wmeta"><span>2026 — ATUAL</span><span>GESTÃO DE SST</span></div><h3>Life Health Group</h3><p class="jobtitle">Coordenador Nacional de Prestadores e Operações de Segurança do Trabalho</p><p class="jobdesc">Coordenação de profissionais em diferentes estados, captação, escopos, cotações, visitas técnicas e acompanhamento de entregas.</p></article>
+      <article class="work primary"><div class="wmeta"><span>2026</span><span>ENGENHARIA DE SEGURANÇA</span></div><h3>Especializar</h3><p class="jobtitle">Engenheiro de Segurança do Trabalho</p><p class="jobdesc">Elaboração e revisão de PGR/GRO, inventários de riscos, planos de ação, documentos ocupacionais e registros no SOC.</p></article>
+    </div>
+    <article class="strata" aria-label="Experiência em engenharia de tráfego">
+      <div class="strata-head"><span>EXPERIÊNCIA EM ENGENHARIA · 2025</span><span>TRÁFEGO E MOBILIDADE</span></div>
+      <div class="strata-body"><div><h3>Strata Engenharia</h3><strong>Engenheiro de Tráfego</strong></div><p>Estudos de tráfego e mobilidade, levantamentos em campo, análises de circulação e elaboração de relatórios técnicos.</p></div>
+    </article>
+    <div class="prior"><b>Outras experiências</b><p><strong>JBS</strong> — qualidade e conformidade · <strong>Andrade Gutierrez</strong> — engenharia e obras · <strong>SAAE Itabirito</strong> — fiscalização técnica.</p></div>
+  </div></section>
+  <section class="section projects" id="atuacao" aria-label="Especialidades e contato — tela 3"><div class="wrap">
+    <div class="section-head"><span class="eyebrow">APLICAÇÃO PRÁTICA</span><span class="counter">03 / 03</span></div>
+    <h2>Não é só teoria.<br>É <em style="font-style:normal;color:#648d4e">execução.</em></h2>
+    <p class="lede">Três frentes que conectam a responsabilidade técnica à rotina real de empresas, clínicas e operações de SST.</p>
+    <div class="project-grid">
+      <article class="project"><span class="num">ÁREA 01 / PREVENÇÃO</span><div class="symbol"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3 36 11v18L20 37 4 29V11L20 3Z" stroke="#315D4D" stroke-width="2"/><path d="M12 20h16M20 12v16" stroke="#89A862" stroke-width="3"/></svg></div><h3>Riscos & documentos</h3><p>PGR/GRO, inventários, matrizes de riscos e planos de ação. Revisão técnica de registros e apoio à documentação ocupacional.</p><div class="tags">NR-01 · PGR · GRO · PPP · LTCAT</div></article>
+      <article class="project"><span class="num">ÁREA 02 / PROCESSOS</span><div class="symbol"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="4" y="6" width="32" height="28" rx="2" stroke="#315D4D" stroke-width="2"/><path d="M4 14h32M12 20h16M12 26h10" stroke="#89A862" stroke-width="2"/></svg></div><h3>SOC & conformidade</h3><p>Estruturação e conferência de empresas, setores, cargos, CBO, GHE e riscos. Qualidade dos dados antes da emissão dos documentos.</p><div class="tags">SOC · ESOCIAL SST · GHE · CBO</div></article>
+      <article class="project"><span class="num">ÁREA 03 / OPERAÇÕES</span><div class="symbol"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="8" cy="20" r="4" stroke="#315D4D" stroke-width="2"/><circle cx="32" cy="8" r="4" stroke="#315D4D" stroke-width="2"/><circle cx="30" cy="32" r="4" stroke="#315D4D" stroke-width="2"/><path d="m12 18 16-8M12 22l14 8" stroke="#89A862" stroke-width="2"/></svg></div><h3>Coordenação nacional</h3><p>Organização de profissionais locais, escopos, prazos, cotações e acompanhamento de atendimentos presenciais em diferentes cidades brasileiras.</p><div class="tags">PRESTADORES · VISTORIAS · NRs</div></article>
+    </div>
+    <div class="final"><div><h3>Conheça o trabalho<br>em profundidade.</h3><p>Graduação em Engenharia Urbana pela UFOP · Especialização em Engenharia de Segurança do Trabalho · CREA-MG e CREA-SP.</p></div><div class="actions"><a class="btn btn-main" href="completo.html">LER PORTFÓLIO COMPLETO ↗</a><a class="btn btn-outline" href="portfolio.pdf" download="Portfolio_Lucas_Carvalho_2026.pdf">↓ BAIXAR PDF</a></div></div>
+  </div></section>
 </main>
-<footer><div class="container"><span>© 2026 Lucas Carvalho · Engenheiro de Segurança do Trabalho</span><span><a href="mailto:carvalho.lucasjosue@gmail.com">E-mail ↗</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/lucas-carvalho-aab4b7170/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></span></div></footer>
+<footer class="foot" id="contato"><div class="wrap"><span>© 2026 LUCAS CARVALHO · ENGENHARIA DE SEGURANÇA DO TRABALHO</span><div><a href="mailto:carvalho.lucasjosue@gmail.com">E-MAIL ↗</a> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/lucas-carvalho-aab4b7170/" target="_blank" rel="noopener">LINKEDIN ↗</a></div></div></footer>
 </body>
 </html>
